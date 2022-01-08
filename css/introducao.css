@@ -29,7 +29,7 @@
 
 .intro p {
   font-size: 1.5rem;
-  color: #525252;
+  color: var(--cor-c7);
 }
 
 @media (max-width: 1000px) {
