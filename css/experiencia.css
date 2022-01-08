@@ -14,7 +14,7 @@
 .experiencia__texto {
   font-size: 1.5rem;
   line-height: 1.33;
-  max-width: 40ch;
+  max-width: 45ch;
   margin-bottom: 60px;
   color: var(--cor-c7);
 }
@@ -56,10 +56,34 @@
   width: 80px;
 }
 
+.empresa > a {
+  text-decoration: none;
+  color: #d4822f;
+}
+
+.empresa:hover::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 100%;
+  border-radius: 0;
+  background: var(--cor-c10);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.8s;
+}
+
+.empresa:hover > a {
+  text-decoration: none;
+  color: #ef9f5f;
+}
+
 .empresa__titulo {
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
+  position: relative;
 }
 
 .empresa__texto {

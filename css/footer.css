@@ -48,6 +48,11 @@
   gap: 10px;
 }
 
+.footer__contato-cv a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
 .footer__contato-cv a img {
   position: relative;
   animation-name: baixar;
