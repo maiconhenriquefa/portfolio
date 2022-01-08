@@ -37,11 +37,12 @@
 .empresa::before {
   content: '';
   display: block;
-  width: 4px;
-  height: 20px;
-  background: var(--cor-10);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--cor-c10);
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: -4px;
 }
 

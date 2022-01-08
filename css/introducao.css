@@ -1,7 +1,7 @@
 .intro {
   max-width: 1200px;
-  padding: 40px 20px;
-  margin: 0 auto;
+  padding: 60px 20px;
+  margin: 60px auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
@@ -11,7 +11,7 @@
 .intro h1 {
   font-size: 4.5rem;
   line-height: 1.125;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -27,14 +27,18 @@
   z-index: -1;
 }
 
-.intro p {
-  font-size: 1.5rem;
-  color: var(--cor-c7);
+.intro__stack {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1000px) {
   .intro h1 {
     font-size: 3rem;
+  }
+  .intro__redes {
+    gap: 10px;
   }
 }
 
@@ -56,8 +60,9 @@
 @media (max-width: 400px) {
   .intro {
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
   .intro img {
-    display: none;
+    justify-self: center;
   }
 }
