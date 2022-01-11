@@ -1,5 +1,5 @@
 .footer {
-  background: var(--cor-c9);
+  background: $cor-c9;
 }
 
 .footer__container {
@@ -18,9 +18,8 @@
 
 .footer__redes-texto {
   display: inline;
-  font-size: 1.5rem;
-  line-height: 1.33;
-  color: var(--cor-c4);
+  @include type-1(24);
+  color: $cor-c4;
 }
 
 .footer__redes-item {
@@ -30,19 +29,18 @@
 }
 
 .footer__contato-cv {
-  font-size: 1.5rem;
-  line-height: 1.33;
-  color: var(--cor-c4);
+  @include type-1(24);
+  color: $cor-c4;
 }
 
 .footer__contato-cv a {
   color: #251600;
-  background: var(--cor-c10);
+  background: $cor-c10;
   padding: 20px 40px;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 24px;
+  @include type-1(24);
   display: flex;
   max-width: max-content;
   gap: 10px;
@@ -81,15 +79,14 @@
 .footer__contato-cv span {
   display: inline-block;
   margin-top: 120px;
-  font-size: 36px;
-  line-height: 1.125;
+  @include type-1(32);
   font-weight: bold;
 }
 
 .footer__copy {
   grid-column: 1/-1;
-  font-size: 1.125rem;
-  color: var(--cor-c6);
+  @include type-1(18);
+  color: $cor-c6;
 }
 
 @media (max-width: 800px) {
@@ -99,16 +96,16 @@
   }
 
   .footer__container p {
-    font-size: 1.125rem;
+    @include type-1(18);
   }
 
   .footer__container a {
-    font-size: 1.125rem;
+    @include type-1(18);
   }
 
   .footer__contato-cv span {
     margin-top: 40px;
-    font-size: 1.25rem;
+    @include type-1(18);
     max-width: 10ch;
   }
   .footer__cv-texto {

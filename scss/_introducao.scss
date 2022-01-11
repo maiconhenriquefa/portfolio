@@ -9,8 +9,7 @@
 }
 
 .intro h1 {
-  font-size: 4.5rem;
-  line-height: 1.125;
+  @include type-1(72);
   margin-bottom: 20px;
   position: relative;
 }
@@ -35,7 +34,7 @@
 
 @media (max-width: 1000px) {
   .intro h1 {
-    font-size: 3rem;
+    @include type-1(48);
   }
   .intro__redes {
     gap: 10px;
@@ -48,7 +47,7 @@
     gap: 40px;
   }
   .intro h1 {
-    font-size: 2rem;
+    @include type-1(32);
   }
   .intro h1::before {
     width: 30px;

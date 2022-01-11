@@ -1,6 +1,6 @@
 .formacao {
-  background: var(--cor-c8);
-  color: var(--cor-c1);
+  background: $cor-c8;
+  color: $cor-c1;
 }
 
 .formacao__container {
@@ -25,20 +25,19 @@
 }
 
 .formacao__subtitulo {
-  color: var(--cor-c9);
+  color: $cor-c9;
   max-width: 5ch;
 }
 
 .formacao__texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
+  @include type-1(24);
   max-width: 48ch;
   margin-bottom: 60px;
-  color: var(--cor-c5);
+  color: $cor-c5;
 }
 
 .formacao__texto strong {
-  color: var(--cor-c1);
+  color: $cor-c1;
 }
 
 .faculdade__lista {
@@ -50,7 +49,7 @@
 
 .faculdade__lista-item {
   flex: 1;
-  background: var(--cor-c9);
+  background: $cor-c9;
   padding: 20px;
   border-radius: 4px;
   display: flex;
@@ -58,16 +57,15 @@
 }
 
 .faculdade__tipo {
-  font-size: 0.875rem;
+  @include type-1(14);
   text-transform: uppercase;
-  color: var(--cor-c5);
+  color: $cor-c5;
   margin-bottom: 10px;
 }
 
 .faculdade__curso {
   flex: 1;
-  font-size: 1.125rem;
-  line-height: 1.4;
+  @include type-1(18);
   margin-bottom: 40px;
   position: relative;
 }
@@ -78,14 +76,14 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--cor-c10);
+  background: $cor-c10;
   position: absolute;
   left: -24px;
 }
 
 .faculdade__instituicao {
-  font-size: 1.125rem;
-  color: var(--cor-c5);
+  @include type-1(18);
+  color: $cor-c5;
 }
 
 .formacao__extra-cursos {
@@ -93,9 +91,8 @@
 }
 
 .formacao__extra h3 {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: var(--cor-c6);
+  @include type-1(14);
+  color: $cor-c6;
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
@@ -120,13 +117,12 @@
 }
 
 .formacao__extra li {
-  font-size: 1.125rem;
-  line-height: 1.1;
+  @include type-1(18);
   margin-bottom: 20px;
 }
 
 .formacao__extra span {
-  color: var(--cor-c6);
+  color: $cor-c6;
 }
 
 .formacao__extra-cursos li {
@@ -141,10 +137,10 @@
     gap: 40px;
   }
   .formacao__subtitulo {
-    color: var(--cor-c1);
+    color: $cor-c1;
   }
   .formacao__texto {
-    font-size: 1.25rem;
+    @include type-1(18);
   }
   .formacao__extra h3::before {
     position: initial;

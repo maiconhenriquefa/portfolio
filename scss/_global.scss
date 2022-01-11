@@ -1,7 +1,7 @@
 body {
   font-family: 'Fira Sans', Arial, sans-serif;
   margin: 0px;
-  color: var(--cor-c8);
+  color: $cor-c8;
 }
 
 h1,
@@ -24,8 +24,7 @@ img {
 }
 
 .is-subtitulo--decoration {
-  font-size: 8rem;
-  line-height: 1;
+  @include type-1(128);
   text-transform: uppercase;
   word-break: break-all;
   max-width: 4ch;
@@ -33,7 +32,7 @@ img {
 
 @media (max-width: 800px) {
   .is-subtitulo--decoration {
-    font-size: 3rem;
+    @include type-1(48);
     text-transform: capitalize;
     max-width: initial !important;
   }

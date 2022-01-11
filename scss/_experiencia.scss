@@ -8,19 +8,18 @@
 }
 
 .experiencia__subtitulo {
-  color: var(--cor-c3);
+  color: $cor-c3;
 }
 
 .experiencia__texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
+  @include type-1(24);
   max-width: 45ch;
   margin-bottom: 60px;
-  color: var(--cor-c7);
+  color: $cor-c7;
 }
 
 .experiencia__texto strong {
-  color: var(--cor-c8);
+  color: $cor-c8;
 }
 
 .empresa {
@@ -28,7 +27,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
   padding: 20px;
-  background: var(--cor-c2);
+  background: $cor-c2;
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
@@ -40,7 +39,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--cor-c10);
+  background: $cor-c10;
   position: absolute;
   top: 25px;
   left: -4px;
@@ -50,8 +49,8 @@
   position: absolute;
   top: 22px;
   left: -100px;
-  color: var(--cor-c7);
-  font-size: 0.875rem;
+  color: $cor-c7;
+  @include type-1(14);
   text-align: right;
   width: 80px;
 }
@@ -67,7 +66,7 @@
   width: 2px;
   height: 100%;
   border-radius: 0;
-  background: var(--cor-c10);
+  background: $cor-c10;
   position: absolute;
   top: 0;
   left: 0;
@@ -80,16 +79,14 @@
 }
 
 .empresa__titulo {
-  font-size: 1.125rem;
-  line-height: 1.1;
+  @include type-1(14);
   font-weight: bold;
   position: relative;
 }
 
 .empresa__texto {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: var(--cor-c7);
+  @include type-1(14);
+  color: $cor-c7;
 }
 
 .empresa__habilidades {
@@ -100,10 +97,9 @@
 }
 
 .empresa__habilidades li {
-  font-size: 0.875rem;
-  line-height: 1.4;
+  @include type-1(14);
   border-radius: 4px;
-  background: var(--cor-c1);
+  background: $cor-c1;
   padding: 5px 10px;
 }
 
@@ -113,10 +109,10 @@
     gap: 40px;
   }
   .experiencia__subtitulo {
-    color: var(--cor-c8);
+    color: $cor-c8;
   }
   .experiencia__texto {
-    font-size: 1.25rem;
+    @include type-1(18);
   }
   .empresa__ano {
     position: initial;
