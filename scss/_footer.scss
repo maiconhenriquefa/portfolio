@@ -10,6 +10,10 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 100px;
+  @include device(m) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
   a {
     @include device(m) {
       @include type-1(18);
@@ -18,12 +22,6 @@
   p {
     @include device(m) {
       @include type-1(18);
-    }
-  }
-  @include device(m) {
-    .footer__container {
-      grid-template-columns: 1fr;
-      gap: 40px;
     }
   }
   @include device(p) {
@@ -44,7 +42,7 @@
 .footer__redes-item {
   padding: 40px 0;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   @include device(m) {
     padding: 20px 0;
   }

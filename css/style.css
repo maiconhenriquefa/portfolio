@@ -41,6 +41,7 @@ img {
     max-width: initial !important;
   }
 }
+
 .header {
   max-width: 1200px;
   padding: 40px 20px;
@@ -522,6 +523,31 @@ img {
   align-items: start;
   gap: 100px;
 }
+@media (max-width: 800px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .footer__container a {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 800px) {
+  .footer__container p {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 400px) {
+  .footer__container {
+    gap: 20px;
+  }
+}
 
 .footer__redes {
   display: inline;
@@ -540,6 +566,11 @@ img {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 800px) {
+  .footer__redes-item {
+    padding: 20px 0;
+  }
+}
 
 .footer__contato-cv {
   font-family: "Fira Sans", Arial, sans-serif;
@@ -547,7 +578,6 @@ img {
   line-height: 1.3;
   color: #cccccc;
 }
-
 .footer__contato-cv a {
   color: #251600;
   background: linear-gradient(#ffab2d, #d17d00);
@@ -562,17 +592,32 @@ img {
   max-width: max-content;
   gap: 10px;
 }
-
 .footer__contato-cv a:hover {
   opacity: 0.8;
   transition: 0.3s;
 }
-
 .footer__contato-cv a img {
   position: relative;
   animation-name: baixar;
   animation-duration: 0.9s;
   animation-iteration-count: infinite;
+}
+.footer__contato-cv span {
+  display: inline-block;
+  margin-top: 120px;
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .footer__contato-cv span {
+    margin-top: 40px;
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    max-width: 10ch;
+  }
 }
 
 @keyframes baixar {
@@ -591,14 +636,10 @@ img {
   margin-bottom: 40px;
   max-width: 25ch;
 }
-
-.footer__contato-cv span {
-  display: inline-block;
-  margin-top: 120px;
-  font-family: "Fira Sans", Arial, sans-serif;
-  font-size: 2rem;
-  line-height: 1.25;
-  font-weight: bold;
+@media (max-width: 800px) {
+  .footer__cv-texto {
+    margin-bottom: 10px;
+  }
 }
 
 .footer__copy {
@@ -607,45 +648,6 @@ img {
   font-size: 1.125rem;
   line-height: 1.3;
   color: #8f8f8f;
-}
-
-@media (max-width: 800px) {
-  .footer__container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .footer__container p {
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.3;
-  }
-
-  .footer__container a {
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.3;
-  }
-
-  .footer__contato-cv span {
-    margin-top: 40px;
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.3;
-    max-width: 10ch;
-  }
-
-  .footer__cv-texto {
-    margin-bottom: 10px;
-  }
-
-  .footer__redes-item {
-    padding: 20px 0;
-  }
-
-  .footer__container {
-    gap: 20px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
