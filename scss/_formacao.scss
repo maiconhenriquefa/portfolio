@@ -130,7 +130,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 800px) {
+@include device(m) {
   .formacao__container {
     grid-template-columns: 1fr;
     padding: 60px 20px;

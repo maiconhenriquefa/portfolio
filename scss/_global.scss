@@ -30,8 +30,24 @@ img {
   max-width: 4ch;
 }
 
-@media (max-width: 800px) {
-  .is-subtitulo--decoration {
+@mixin device($width) {
+  @if $width == p {
+    @media (max-width: 400px) {
+      @content;
+    }
+  } @else if $width == m {
+    @media (max-width: 800px) {
+      @content;
+    }
+  } @else if $width == l {
+    @media (max-width: 1000px) {
+      @content;
+    }
+  }
+}
+
+.is-subtitulo--decoration {
+  @include device(m) {
     @include type-1(48);
     text-transform: capitalize;
     max-width: initial !important;

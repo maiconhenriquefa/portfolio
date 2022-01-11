@@ -32,7 +32,7 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 1000px) {
+@include device(l) {
   .intro h1 {
     @include type-1(48);
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@include device(m) {
   .intro {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@include device(p) {
   .intro {
     grid-template-columns: 1fr;
     margin: 0 auto;

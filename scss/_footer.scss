@@ -10,6 +10,25 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 100px;
+  a {
+    @include device(m) {
+      @include type-1(18);
+    }
+  }
+  p {
+    @include device(m) {
+      @include type-1(18);
+    }
+  }
+  @include device(m) {
+    .footer__container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+  @include device(p) {
+    gap: 20px;
+  }
 }
 
 .footer__redes {
@@ -25,37 +44,48 @@
 .footer__redes-item {
   padding: 40px 0;
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  @include device(m) {
+    padding: 20px 0;
+  }
 }
 
 .footer__contato-cv {
   @include type-1(24);
   color: $cor-c4;
-}
-
-.footer__contato-cv a {
-  color: #251600;
-  background: $cor-c10;
-  padding: 20px 40px;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
-  @include type-1(24);
-  display: flex;
-  max-width: max-content;
-  gap: 10px;
-}
-
-.footer__contato-cv a:hover {
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-.footer__contato-cv a img {
-  position: relative;
-  animation-name: baixar;
-  animation-duration: 0.9s;
-  animation-iteration-count: infinite;
+  a {
+    color: #251600;
+    background: $cor-c10;
+    padding: 20px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include type-1(24);
+    display: flex;
+    max-width: max-content;
+    gap: 10px;
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+    img {
+      position: relative;
+      animation-name: baixar;
+      animation-duration: 0.9s;
+      animation-iteration-count: infinite;
+    }
+  }
+  span {
+    display: inline-block;
+    margin-top: 120px;
+    @include type-1(32);
+    font-weight: bold;
+    @include device(m) {
+      margin-top: 40px;
+      @include type-1(18);
+      max-width: 10ch;
+    }
+  }
 }
 
 @keyframes baixar {
@@ -74,47 +104,13 @@
   display: inline-block;
   margin-bottom: 40px;
   max-width: 25ch;
-}
-
-.footer__contato-cv span {
-  display: inline-block;
-  margin-top: 120px;
-  @include type-1(32);
-  font-weight: bold;
+  @include device(m) {
+    margin-bottom: 10px;
+  }
 }
 
 .footer__copy {
   grid-column: 1/-1;
   @include type-1(18);
   color: $cor-c6;
-}
-
-@media (max-width: 800px) {
-  .footer__container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .footer__container p {
-    @include type-1(18);
-  }
-
-  .footer__container a {
-    @include type-1(18);
-  }
-
-  .footer__contato-cv span {
-    margin-top: 40px;
-    @include type-1(18);
-    max-width: 10ch;
-  }
-  .footer__cv-texto {
-    margin-bottom: 10px;
-  }
-  .footer__redes-item {
-    padding: 20px 0;
-  }
-  .footer__container {
-    gap: 20px;
-  }
 }

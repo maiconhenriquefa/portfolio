@@ -54,7 +54,7 @@
   transition: 0.3s;
 }
 
-@media (max-width: 800px) {
+@include device(m) {
   .header__menu li + li::before {
     display: none;
   }
@@ -62,7 +62,8 @@
     display: none;
   }
 }
-@media (max-width: 800px) {
+
+@include device(m) {
   .header {
     flex-direction: column;
     gap: 40px;
